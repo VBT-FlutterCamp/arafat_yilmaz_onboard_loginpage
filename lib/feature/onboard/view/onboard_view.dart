@@ -151,7 +151,7 @@ class _OnboardViewState extends State<OnboardView> {
             padding: MaterialStateProperty.all(const EdgeInsets.all(15))),
         //clipBehavior: Clip.antiAlias,
         onPressed: () {
-          if (_currentIndex == onboardList.length - 2) {
+          if (_currentIndex == onboardList.length - 1) {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const LoginScreen()));
           } else {
