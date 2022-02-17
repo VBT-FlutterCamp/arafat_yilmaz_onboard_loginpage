@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:splashscreen_loginpage/feature/onboard/model/onboard_model.dart';
-import 'package:splashscreen_loginpage/feature/login/view/loginscreen.dart';
+import 'package:splashscreen_loginpage/feature/login/view/loginscreen_view.dart';
 
 class OnboardView extends StatefulWidget {
   const OnboardView({Key? key}) : super(key: key);

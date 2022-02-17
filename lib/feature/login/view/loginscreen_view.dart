@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -39,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(
                       fontSize: 50,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black54),
+                      color: Color.fromARGB(97, 124, 25, 103)),
                 ),
                 const SizedBox(
                   height: 50,
@@ -103,13 +104,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                       text: "Don't you have an account? ",
-                      style: TextStyle(color: Colors.grey),
+                      style: const TextStyle(color: Colors.grey),
                       children: <TextSpan>[
                         TextSpan(
-                            text: 'Create',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                          text: 'Create',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              //
+                            },
+                        ),
                       ],
                     ),
                   ),
